@@ -1,0 +1,107 @@
+<html>
+  <head>
+    <style>
+      * {
+      	font-family: "Helvetica Neue",Helvetica,Arial,sans-serif;
+      	color: #333;
+      	line-height: 20px;
+      	font-size: 13px;
+      }
+      a {
+      	outline: none;
+      	text-decoration: none;
+      }
+      a:hover {
+      	border-radius: 3px 3px;
+      	background: -webkit-gradient(linear, left top, left bottom, color-stop(0, #fff),  color-stop(0.4, hsl(215, 67%, 97%)),
+      color-stop(0.41, hsl(213, 48%, 95%)));
+      	border: solid 1px #c5cdd3;
+      }
+      ul {
+        margin-top: 0px;
+        margin-bottom: 0px;
+      }
+      .navbar {
+      	overflow: visible;
+      	position: fixed;
+      	right: 0;
+      	left: 0;
+      	margin-bottom: 5;
+      	top: 5;
+      }
+      .navbar-inner {
+        display: block; 
+        background-image: linear-gradient(to bottom,#fff,#f2f2f2);
+        background-repeat: repeat-x;
+        border: 1px solid #d4d4d4;
+        background-color: #fafafa;
+        min-height: 40px;
+        border-width: 0 0 1px;
+        padding-right: 0;
+        padding-left: 0;
+        -webkit-border-radius: 0;
+        border-radius: 0;
+        -webkit-box-shadow: 0 1px 10px rgba(0,0,0,0.1);
+        box-shadow: 0 1px 10px rgba(0,0,0,0.1);
+      }
+      .header {
+        float: left;
+        display: block;
+        overflow: hidden;
+        font-size: 18px;
+        padding-left: 10px;
+        margin: 9px 0 8px 0;
+        max-height: 50px;
+      }
+      .headertitle {
+      	color: black;
+        text-decoration: none;
+      }
+      .lnks {
+      	margin-top: 5px;
+      	margin-left: 10px;
+      	margin-bottom: 5px;
+      }
+      .spacer {
+      	height: 50px;
+      }
+      .msg {
+      	color: red;
+      }
+      .hide {
+      	display: none;
+      }   
+      .sectionHeader {
+        color: blue;
+        text-decoration: underline;
+      }
+    </style>
+    <script src="popup.js"></script>
+  </head>
+  <body style="height: 100px;width: 450px;">
+    <div class="navbar">
+      <div class="navbar-inner">
+        <div class="header">
+          <img src="cmc-small-2.png" style="margin-right:10px">
+          CES Labs
+        </div>
+      </div>
+    </div>
+    <div class="spacer"></div>
+    <div class="lnks">
+      <p id="buildDocsLnk" class="hide"><a href="#">Create Deploy Docs</a></p>
+      <p id="ptxt" class="msg">You must be on a CMC Sprint, Story or Issue record to build Deploy Docs!</p>
+    </div>
+    <div class="lnks">
+      <h2 id="jrheader" class="hide sectionHeader">Tech Assessment Job Result Reports</h2>
+      <ul>
+        <li id="clsandtrgrpt" class="hide"><a href="#">Classes and Triggers</a></li>
+        <li id="vfandjsrpt" class="hide"><a href="#">Visualforce and Javascript</a></li>
+        <li id="objrpt" class="hide"><a href="#">Objects</a></li>
+        <li id="hltmetricrpt" class="hide"><a href="#">High Level Test Metrics</a></li>
+        <li id="tstdandfrpt" class="hide"><a href="#">Test Duration and Failures</a></li>
+        <li id="codecvgrpt" class="hide"><a href="#">Code Coverage</a></li>
+      </ul>
+    </div>
+  </body>
+</html>

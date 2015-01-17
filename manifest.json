@@ -1,0 +1,15 @@
+{
+  "manifest_version": 2,
+  "name": "Appirio CES Labs",
+  "short_name": "Appirio CES Labs",
+  "description": "Extend the Appirio CES technology platform.",
+  "version": "3.2",
+  "content_security_policy": "script-src 'self' https://ssl.google-analytics.com; object-src 'self'",
+  "permissions": [
+    "tabs"
+  ],
+  "browser_action": {
+    "default_icon": "appirio-icon.png",
+    "default_popup": "popup.html"
+  }
+}
